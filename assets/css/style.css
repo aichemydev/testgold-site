@@ -36,7 +36,7 @@
   font-family: Ubuntu;
 } 
 #terminal {  
-  width: 30vw;  
+  width: 460px;
   height: 15vh;  
   box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 } 
@@ -90,13 +90,19 @@
 #terminal__body {  
   background: rgba(56, 4, 40, 0.9);  
   font-family: 'Ubuntu Mono';  
-  height: calc(100% - 30px);  
-  padding-top: 2px;  
+  height: calc(100% - 25px);
   margin-top: -1px;
   border-bottom-left-radius: 5px;  
   border-bottom-right-radius: 5px;
+  padding: 0px;
 } 
 #terminal__prompt {  
+  display: flex;
+}
+#terminal__prompt--host-container {  
+  display: flex;
+}
+#terminal__prompt--body-container {  
   display: flex;
 }
 #terminal__prompt--user {  
@@ -135,6 +141,9 @@
   #terminal {    
     max-height: 90%;    
     width: 90%;  
+  }
+  #terminal__prompt {  
+    display: block;
   }
 }
 
