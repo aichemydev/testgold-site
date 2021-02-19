@@ -12,6 +12,18 @@
   margin-top: 10px;
 }
 
+#addon-container {
+  width: 65%;
+  margin: 50px auto;
+}
+
+#addon-bar {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff!important;
+  background-color: #47433e!important;
+}
+
 .img-tab {
   height: 18vh;
   width: auto;
@@ -25,6 +37,9 @@
   text-align: center;
   padding: 20px 0;
 }
+#tabDes > h2 {
+  margin-bottom: 10px !important;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); 
@@ -32,12 +47,12 @@
   display: flex;  
   justify-content: center;  
   align-items: center;  
-  height: 18vh;
+  height: 150px;
   font-family: Ubuntu;
 } 
 #terminal {  
   width: 460px;
-  height: 15vh;  
+  height: 80%;  
   box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 } 
 #terminal__bar {  
@@ -94,7 +109,7 @@
   margin-top: -1px;
   border-bottom-left-radius: 5px;  
   border-bottom-right-radius: 5px;
-  padding: 0px;
+  padding: 0 0 0 2px;
 } 
 #terminal__prompt {  
   display: flex;
@@ -136,11 +151,24 @@
   }  100% {    
     background: #ffffff;  
   }
-} 
+}
+@media (max-width: 992px) {
+  #addon-container {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  #addon-container {
+    width: 90%;
+  }
+}
 @media (max-width: 600px) {  
+  #addon-container {
+    width: 100%;
+  }
   #terminal {    
     max-height: 90%;    
-    width: 90%;  
+    width: 100%;  
   }
   #terminal__prompt {  
     display: block;

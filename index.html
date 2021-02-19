@@ -102,65 +102,22 @@
 
       </div>
 
-      <div class="w3-container">
+      <div id="addon-container">
       
-        <div class="w3-bar w3-black">
+        <div id="addon-bar" class="w3-bar">
           <button class="w3-bar-item w3-button tablink w3-blue" onclick="openTab(event,'Java')">Java</button>
           <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Python')">Python</button>
           <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'JavaScript')">JavaScript</button>
         </div>
         
-        <div id="Java" class="w3-container w3-border language container-fluid">
-          <div class="row">
-            <div id="tabDes" class="col-md-12 col-lg-5">
-              <h2>Download the testgold-selenium package</h2>
-              <p></p>
-              <a href="assets/img/arrow.jpg" download="testgold-selenium">
-                <button type="button" class="btn btn-primary">Download</button>
-              </a> 
-            </div>
-            <div class="col-lg-2 col-md-12 offset-2 offset-lg-0 offset-md-5 offset-sm-4">
-              <img src="assets/img/arrow.png" alt="" class="img-tab">
-            </div>
-            <main id="container" class="col-md-12 col-lg-5">
-              <div id="terminal">
-                <!-- Terminal Bar -->       
-                <section id="terminal__bar">          
-                  <div id="bar__buttons">            
-                    <button class="bar__button" id="bar__button--exit">&#10005;</button>            
-                    <button class="bar__button">&#9472;</button>                
-                    <button class="bar__button">&#9723;</button>          
-                  </div>          
-                </section>        
-                <!-- Terminal Body -->        
-                <section id="terminal__body">          
-                  <div id="terminal__prompt">
-                    <span id="terminal__prompt--host-container">
-                      <span id="terminal__prompt--user">testgold@ubuntu:</span>            
-                      <span id="terminal__prompt--location">~/Downloads</span>            
-                      <span id="terminal__prompt--bling">$&#160;</span>
-                    </span>
-                    <span id="terminal__prompt--body-container">
-                      <span id="terminal__prompt--bling">pip install testgold-selenium</span>            
-                      <span id="terminal__prompt--cursor"></span>          
-                    </span>   
-                  </div>        
-                </section>      
-              </div>    
-            </main>
-          </div>
-
-        </div>
-      
-        <div id="Python" class="w3-container w3-border language" style="display:none">
+        <div id="Java" class="w3-container w3-border language">
           <div id="tabDes">
             <h2>Download the testgold-selenium package</h2>
-            <p></p>
             <a href="assets/img/arrow.jpg" download="testgold-selenium">
               <button type="button" class="btn btn-primary">Download</button>
-            </a>
+            </a> 
           </div>
-          <div><img src="assets/img/arrow.png" alt="" class="img-tab"></div>
+          <!-- <div><img src="assets/img/arrow.png" alt="" class="img-tab"></div> -->
           <main id="container">
             <div id="terminal">
               <!-- Terminal Bar -->       
@@ -173,12 +130,52 @@
               </section>        
               <!-- Terminal Body -->        
               <section id="terminal__body">          
-                <div id="terminal__prompt">            
-                  <span id="terminal__prompt--user">testgold@ubuntu:</span>            
-                  <span id="terminal__prompt--location">~/Downloads</span>            
-                  <span id="terminal__prompt--bling">$&#160;</span>
-                  <span id="terminal__prompt--bling">pip install testgold-selenium</span>            
-                  <span id="terminal__prompt--cursor"></span>          
+                <div id="terminal__prompt">
+                  <span id="terminal__prompt--host-container">
+                    <span id="terminal__prompt--user">testgold@ubuntu:</span>            
+                    <span id="terminal__prompt--location">~/Downloads</span>            
+                    <span id="terminal__prompt--bling">$&#160;</span>
+                  </span>
+                  <span id="terminal__prompt--body-container">
+                    <span id="terminal__prompt--bling">pip install testgold-selenium</span>            
+                    <span id="terminal__prompt--cursor"></span>          
+                  </span>   
+                </div>        
+              </section>      
+            </div>    
+          </main>
+        </div>
+      
+        <div id="Python" class="w3-container w3-border language" style="display:none">
+          <div id="tabDes">
+            <h2>Download the testgold-selenium package</h2>
+            <a href="assets/img/arrow.jpg" download="testgold-selenium">
+              <button type="button" class="btn btn-primary">Download</button>
+            </a>
+          </div>
+          <!-- <div><img src="assets/img/arrow.png" alt="" class="img-tab"></div> -->
+          <main id="container">
+            <div id="terminal">
+              <!-- Terminal Bar -->       
+              <section id="terminal__bar">          
+                <div id="bar__buttons">            
+                  <button class="bar__button" id="bar__button--exit">&#10005;</button>            
+                  <button class="bar__button">&#9472;</button>                
+                  <button class="bar__button">&#9723;</button>          
+                </div>          
+              </section>        
+              <!-- Terminal Body -->        
+              <section id="terminal__body">          
+                <div id="terminal__prompt">
+                  <span id="terminal__prompt--host-container">
+                    <span id="terminal__prompt--user">testgold@ubuntu:</span>            
+                    <span id="terminal__prompt--location">~/Downloads</span>            
+                    <span id="terminal__prompt--bling">$&#160;</span>
+                  </span>
+                  <span id="terminal__prompt--body-container">
+                    <span id="terminal__prompt--bling">pip install testgold-selenium</span>            
+                    <span id="terminal__prompt--cursor"></span>          
+                  </span>   
                 </div>        
               </section>      
             </div>    
@@ -188,12 +185,11 @@
         <div id="JavaScript" class="w3-container w3-border language" style="display:none">
           <div id="tabDes">
             <h2>Download the testgold-selenium package</h2>
-            <p></p>
             <a href="assets/img/arrow.jpg" download="testgold-selenium">
               <button type="button" class="btn btn-primary">Download</button>
             </a>
           </div>
-          <div><img src="assets/img/arrow.png" alt="" class="img-tab"></div>
+          <!-- <div><img src="assets/img/arrow.png" alt="" class="img-tab"></div> -->
           <main id="container">
             <div id="terminal">
               <!-- Terminal Bar -->       
@@ -206,12 +202,16 @@
               </section>        
               <!-- Terminal Body -->        
               <section id="terminal__body">          
-                <div id="terminal__prompt">            
-                  <span id="terminal__prompt--user">testgold@ubuntu:</span>            
-                  <span id="terminal__prompt--location">~/Downloads</span>            
-                  <span id="terminal__prompt--bling">$&#160;</span>
-                  <span id="terminal__prompt--bling">npm install testgold-selenium</span>            
-                  <span id="terminal__prompt--cursor"></span>          
+                <div id="terminal__prompt">
+                  <span id="terminal__prompt--host-container">
+                    <span id="terminal__prompt--user">testgold@ubuntu:</span>            
+                    <span id="terminal__prompt--location">~/Downloads</span>            
+                    <span id="terminal__prompt--bling">$&#160;</span>
+                  </span>
+                  <span id="terminal__prompt--body-container">
+                    <span id="terminal__prompt--bling">npm install testgold-selenium</span>            
+                    <span id="terminal__prompt--cursor"></span>          
+                  </span>   
                 </div>        
               </section>      
             </div>    
@@ -230,7 +230,7 @@
         for (i = 0; i < x.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
         }
-        document.getElementById(langName).style.display = "flex";
+        document.getElementById(langName).style.display = "block";
         evt.currentTarget.className += " w3-blue";
       }
       </script>
