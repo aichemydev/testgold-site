@@ -572,6 +572,22 @@ section {
   color: #919191;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  align-items: center;
+}
+.video-container iframe {
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
